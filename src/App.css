@@ -1,38 +1,67 @@
+*{
+  font-family: 'Nova Square', sans-serif;
+}
+
 .App {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.mainContainer {
+  text-align: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  min-height:70vh;
+}
+
+h1 {
   color: white;
+  font-size: 48px;
+  font-weight: 900;
+  box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
+
 }
 
-.App-link {
-  color: #61dafb;
+.circle {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 290px;
+  height: 290px;
+  border: 5px solid grey;
+  color: white;
+  font-size: xx-large;
+  border-radius: 50%;
+  background-color: black;
+  box-shadow: 0px 5px 8px rgba(255, 255, 255, 0.1);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btnContainer {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  gap: 10px;
+}
+
+button {
+  color: white;
+  background: transparent;
+  border: 1px solid grey;
+  border-radius: 25px;
+  width: 100px;
+  box-shadow: 0px 8px 10px rgba(255, 255, 255, 0.1);
+  height: 40px;
+}
+
+.millisecond {
+  font-size: large;
 }
